@@ -91,20 +91,16 @@
 
 .footer__form {
     margin-top: 60px;
-    display: flex; //=-------
-    flex-direction: column; //--------
-    align-items: center; //------
-    justify-content: center; //-----
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
 
     // margin-left: 93px;
-
-    // &:not(:last-child) {
-    //     display: flex;
-    //     flex-direction: column;
-    // }
-
     @media screen and (min-width: 768px) {
-    
+        display: flex;  
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
 }
 

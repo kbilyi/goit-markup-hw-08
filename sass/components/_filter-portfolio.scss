@@ -4,6 +4,7 @@
 .filter__button {
     min-width: 73px;
     height: 38px;
+    margin-bottom: 15px;
     
     background: var(--primary-background-color);
     border-radius: 4px;
@@ -53,10 +54,10 @@
 }
 
 .filter-list {
-    // display: flex;
+    display: flex;
     // flex-direction: column;
     // justify-content: center;
-    // flex-wrap: wrap;
+    flex-wrap: wrap;
     // margin-left: -30px;
     // margin-top: -30px;
 
@@ -67,11 +68,12 @@
 }
 
 .filter-list > .container-set {
-    // margin-left: 30px;
-    // margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
-       // flex-basis: calc((100% - 30px * 3) / 3);
+
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 30px * 3) / 2);
+    }
 
     @media screen and (min-width: 1200px) {
             margin-left: 30px;
