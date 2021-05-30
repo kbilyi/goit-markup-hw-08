@@ -1,0 +1,39 @@
+.logo {
+    font-family: var(--logo-font);
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    left: 15px;
+    top: 18px;
+
+    position: absolute;
+
+    &:not(.nohover):hover,
+    &:not(.nofocus):focus {
+        color: var(--primary-text-color);
+    }
+
+    @media screen and (min-width: 1200px) {
+        left: 215px;
+        top: 24px;
+    }
+}
+
+.logo__color {
+    color:var(--secondary-background-color);
+}
+
+// ----------------------- Logo Footer-----------------------
+
+.logo__footer {
+    color:var(--secondary-text-color);
+    font-family: var(--logo-font);
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+
+    &:not(.nohover):hover,
+    &:not(.nofocus):focus {
+        color: var(--secondary-text-color);
+    }
+} 

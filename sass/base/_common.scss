@@ -1,0 +1,58 @@
+
+body {
+    font-family: var(--main-font);
+    color:var(--accent-text-color);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+margin: 0;
+padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+address {
+    font-style: inherit;
+}
+
+button:hover {
+    cursor:pointer;
+    color: var(--secondary-text-color);
+    background-color: var(--secondary-background-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+
+textarea {
+    resize: none;
+}
