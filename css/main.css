@@ -359,6 +359,18 @@ textarea {
   text-decoration: auto;
 }
 
+.mobile-menu__list li a:hover, .mobile-menu__list li a:focus {
+  color: #2196F3;
+}
+
+.mobile-contacts__list:not(:last-child) {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+}
+
 .mobile-contacts__list li:not(:last-child) {
   margin-bottom: 32px;
 }
@@ -369,12 +381,21 @@ textarea {
   line-height: 28px;
   letter-spacing: 0.02em;
   color: #757575;
-  text-decoration: auto;
+}
+
+.menu__number {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: #2196F3;
 }
 
 .mobile-social__list {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 64px;
+  margin-left: -10px;
 }
 
 .mobile-social__list li a {
