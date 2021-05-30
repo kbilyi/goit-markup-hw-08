@@ -963,8 +963,21 @@ textarea {
 
 .filter-buttons {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: left;
   margin-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .filter-buttons {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200x) {
+  .filter-buttons {
+    justify-content: center;
+  }
 }
 
 .filter-buttons li {
@@ -983,17 +996,24 @@ textarea {
   margin-bottom: 4px;
 }
 
-.filter-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
+@media screen and (min-width: 1200px) {
+  .filter-list {
+    margin-left: -30px;
+    margin-top: -30px;
+  }
 }
 
 .filter-list > .container-set {
-  margin-left: 30px;
-  margin-top: 30px;
-  flex-basis: calc((100% - 30px * 3) / 3);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .filter-list > .container-set {
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc((100% - 30px * 3) / 3);
+  }
 }
 
 .container-set {
