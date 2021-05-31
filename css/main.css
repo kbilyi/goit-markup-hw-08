@@ -363,24 +363,24 @@ textarea {
   color: #2196F3;
 }
 
-.mobile-contacts__list:not(:last-child) {
-  font-weight: 500;
-  font-size: 34px;
-  line-height: 40px;
-  letter-spacing: 0.02em;
-  color: #2196F3;
-}
-
 .mobile-contacts__list li:not(:last-child) {
   margin-bottom: 32px;
 }
 
-.mobile-contacts__list li a {
+.mobile-contacts__list a {
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
   letter-spacing: 0.02em;
   color: #757575;
+}
+
+.mobile-contacts__list .menu__number {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: #2196F3;
 }
 
 .menu__number {
@@ -911,13 +911,16 @@ textarea {
 
 .card-case {
   width: 100%;
-  margin-bottom: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   margin-right: 30px;
 }
 
 .card-case:last-child {
   margin-right: 0px;
+}
+
+.card-case:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1100,26 +1103,34 @@ textarea {
 
 @media screen and (min-width: 1200px) {
   .filter-list {
-    margin-left: -30px;
-    margin-top: -30px;
+    padding-left: -30px;
+    padding-top: -30px;
   }
 }
 
-.filter-list > .container-set {
-  margin-left: auto;
-  margin-right: auto;
+@media screen and (min-width: 768px) {
+  .filter-list {
+    padding-left: -30px;
+    padding-top: -30px;
+  }
+}
+
+.filter-list > .container-set:not(:first-child) {
+  padding-top: 30px;
 }
 
 @media screen and (min-width: 768px) {
   .filter-list > .container-set {
     flex-basis: calc((100% - 30px * 3) / 2);
+    padding-left: 30px;
+    padding-top: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .filter-list > .container-set {
-    margin-left: 30px;
-    margin-top: 30px;
+    padding-left: 30px;
+    padding-top: 30px;
     flex-basis: calc((100% - 30px * 3) / 3);
   }
 }

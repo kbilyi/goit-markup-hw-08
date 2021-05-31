@@ -221,27 +221,28 @@
 
 .mobile-contacts__list {
 
-    &:not(:last-child) {
+    li {
+        &:not(:last-child) {
+            margin-bottom: 32px;
+        }
+
+    }
+
+    a {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.02em;
+        
+        color:#757575;
+    }
+
+    .menu__number {
         font-weight: 500;
         font-size: 34px;
         line-height: 40px;
         letter-spacing: 0.02em;
         color: #2196F3;
-    }
-
-    li {
-        &:not(:last-child) {
-            margin-bottom: 32px;
-        }
-        a {
-            font-weight: 500;
-            font-size: 24px;
-            line-height: 28px;
-            letter-spacing: 0.02em;
-            
-            color:#757575;
-        }
-
     }
 
 }
