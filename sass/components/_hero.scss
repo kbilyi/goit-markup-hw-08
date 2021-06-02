@@ -5,28 +5,10 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
     ),
-    url(../../images/mobile/hero/img_herooverlay_mobile.jpg);
+    url(../../images/herooverlay.jpg);
     text-align: center;
     background-size: cover;
     background-position: center;
-
-    @media screen and (min-width: 768px) {
-        background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-    ),
-    url(../../images/tablet/hero/img_herooverlay_tablet.jpg);
-    }
-
-    @media screen and (min-width: 1200) {
-        background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-    ),
-    url(../../images/desktop/hero/Img_herooverlay_desktop.jpg);
-    }
 }
 
 .page-hero {
